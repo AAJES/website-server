@@ -1,14 +1,14 @@
-# Use OpenJDK 17 as the base image
-FROM adoptopenjdk/openjdk17:alpine-jre
+# Use the official OpenJDK 11 image as a base
+FROM openjdk:11
 
 # Set the working directory inside the container
 WORKDIR /app
 
-# Copy the JAR file from the host into the container at /app
-COPY target/AJES.jar /app/AJES.jar
+# Copy the packaged Spring Boot application JAR file into the container
+COPY .mvn/wrapper/maven-wrapper.jar /app/
 
-# Expose the port your application listens on
+# Expose the port your application runs on
 EXPOSE 5050
 
-# Specify the command to run your application
-CMD ["java", "-jar", "AJES.jar"]
+# Set the entry point to run the Spring Boot application
+ENTRYPOINT ["java", "-jar", "your-application-name.jar"]
