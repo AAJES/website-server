@@ -11,4 +11,4 @@ COPY .mvn/wrapper/maven-wrapper.jar /app/
 EXPOSE 5050
 
 # Set the entry point to run the Spring Boot application
-ENTRYPOINT ["java", "-jar", "maven-wrapper.jar"]
+ENTRYPOINT ["java", "-jar", "AJES.jar"]
