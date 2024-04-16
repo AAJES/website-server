@@ -5,7 +5,7 @@ FROM openjdk:11
 WORKDIR /app
 
 # Copy the packaged Spring Boot application JAR file into the container
-COPY COPY .mvn/wrapper/maven-wrapper.jar  /app/
+COPY .mvn/wrapper/maven-wrapper.jar  /app/
 
 # Expose the port your application runs on
 EXPOSE 5050
