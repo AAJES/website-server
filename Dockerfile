@@ -5,10 +5,10 @@ FROM openjdk:11
 WORKDIR /app
 
 # Copy the packaged Spring Boot application JAR file into the container
-COPY .mvn/wrapper/maven-wrapper.jar  /app/
+COPY /target/AJES.jar  /app/
 
 # Expose the port your application runs on
 EXPOSE 5050
 
 # Set the entry point to run the Spring Boot application
-ENTRYPOINT ["java", "-jar", "maven-wrapper.jar"]
+ENTRYPOINT ["java", "-jar", "AJES.jar"]
