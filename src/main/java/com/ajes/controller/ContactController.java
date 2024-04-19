@@ -8,7 +8,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/ajes")
-@CrossOrigin(origins="http://localhost:4200")
+@CrossOrigin(origins="https://project-client-kappa.vercel.app/")
 public class ContactController {
 
     @Autowired
