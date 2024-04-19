@@ -17,7 +17,7 @@ import com.ajes.service.DemoService;
 
 
 @RestController
-@CrossOrigin("http://localhost:4200")
+@CrossOrigin("https://project-client-kappa.vercel.app/")
 @RequestMapping("/ajes")
 public class DemoController {
 
