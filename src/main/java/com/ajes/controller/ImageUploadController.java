@@ -24,7 +24,7 @@ import java.io.File;
 
 @RestController
 @RequestMapping("/ajes")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://project-client-kappa.vercel.app/")
 public class ImageUploadController {
 	@Autowired
 	private ImageService imageService;
