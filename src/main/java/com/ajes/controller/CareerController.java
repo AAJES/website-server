@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/ajes")
-@CrossOrigin("https://project-client-kappa.vercel.app/")
+@CrossOrigin("https://project-client-kappa.vercel.app")
 public class CareerController {
 
     @Autowired
