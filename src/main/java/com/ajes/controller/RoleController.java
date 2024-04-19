@@ -11,7 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/ajes")
-@CrossOrigin("http://localhost:4200")
+@CrossOrigin("https://project-client-kappa.vercel.app/")
 public class RoleController {
 
     @Autowired
