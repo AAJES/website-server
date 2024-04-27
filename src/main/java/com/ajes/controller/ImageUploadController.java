@@ -74,7 +74,7 @@ public class ImageUploadController {
 
 	}
 
-	private static final String FILE_DIRECTORY = "/path/to/";
+	private static final String FILE_DIRECTORY = "./";
 
 	//private static final String FILE_DIRECTORY = "D:\\temp\\";
 
