@@ -17,7 +17,7 @@ public class LoggerService {
         logger.info("This is an information log message");
         logger.error("This is an error log message");
         
-        String filePath = "D://error.txt";
+        String filePath = "./error.txt";
         
         try {
             FileOutputStream fileOutputStream = new FileOutputStream(filePath);
