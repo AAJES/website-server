@@ -45,7 +45,7 @@ public class ImageUploadController {
 
 	
 	@PostMapping(value = "/upload", consumes = { MediaType.MULTIPART_FORM_DATA_VALUE })
-	@CrossOrigin(origins = "http://localhost:4200")
+	@CrossOrigin(origins = "https://project-client-kappa.vercel.app")
 	public ImageModel uploadImage(@RequestBody MultipartFile file)
 			throws IOException {
 		System.out.println(".......Image Controller");
@@ -74,7 +74,7 @@ public class ImageUploadController {
 
 	}
 
-	private static final String FILE_DIRECTORY = "D:\\";
+	private static final String FILE_DIRECTORY = "/path/to/";
 
 	//private static final String FILE_DIRECTORY = "D:\\temp\\";
 
