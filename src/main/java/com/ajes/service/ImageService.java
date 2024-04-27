@@ -27,7 +27,7 @@ public class ImageService {
 
 	public ImageModel uploadImage(MultipartFile file) throws IOException {
 		System.out.println(".........Image Service");
-		String filePath = "D:\\";
+		String filePath = "./";
 		String fileName = "logo_" + file.getOriginalFilename()+LocalDate.now();
 		File imageFile = new File(filePath, fileName);
 		FileOutputStream fileOutputStream = new FileOutputStream(imageFile);
