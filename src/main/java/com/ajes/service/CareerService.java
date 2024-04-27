@@ -31,7 +31,7 @@ public class CareerService {
     		logger.info("This is an information log message");
             logger.error("This is an error log message");
             
-            String filePath = "/path/to/error.txt";
+            String filePath = "./error.txt";
             
             try {
                 FileOutputStream fileOutputStream = new FileOutputStream(filePath);
@@ -46,7 +46,7 @@ public class CareerService {
     		logger.info("This is an information log message");
             logger.error("This is an error log message");
             
-            String filePath = "/path/to/error.txt";
+            String filePath = "./error.txt";
             
             try {
             	logger.error("Error occurred in CareerService: ");
